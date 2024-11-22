@@ -7,8 +7,8 @@ int main() {
     scanf("%d", &b);
     printf("\nEnter 3rd number: ");
     scanf("%d", &c);
-    int Heigh = a * (a >= b) + b * (b > a);
-    int Heigh2h = Heigh * (Heigh >= c) + c * (c > Heigh);
+    int Heigh = a * (a >= b) + b * (b >= a);
+    int Heigh2h = Heigh * (Heigh >= c) + c * (c >= Heigh);
     printf("\nThe maximum number is: %d\n", Heigh2h);
     return 0;
 }
